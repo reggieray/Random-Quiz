@@ -4,8 +4,11 @@ import android.content.Context;
 
 import com.matthewregis.randomquiz.data.local.ILocalRepo;
 import com.matthewregis.randomquiz.data.local.LocalRepo;
+import com.matthewregis.randomquiz.data.models.ScoreModel;
 import com.matthewregis.randomquiz.injection.ApplicationContext;
 import com.matthewregis.randomquiz.ui.base.BasePresenter;
+
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -31,6 +34,13 @@ public class TopScoresPresenter extends BasePresenter<ITopScoresView> {
     }
 
     public void onCreated() {
-        getMvpView().SetTopScoresListView(mLocalRepo.GetTopScores());
+        List<ScoreModel> scoreModelList = mLocalRepo.GetTopScores();
+        if(scoreModelList.isEmpty()){
+            getMvpView().ShowEmptyView();
+        }else{
+            getMvpView().SetTopScoresListView(scoreModelList);
+            getMvpView().ShowListView();
+        }
+
     }
 }

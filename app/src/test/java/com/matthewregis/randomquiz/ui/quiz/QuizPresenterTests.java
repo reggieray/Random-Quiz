@@ -3,11 +3,10 @@ package com.matthewregis.randomquiz.ui.quiz;
 import android.content.Context;
 
 import com.matthewregis.randomquiz.R;
-import com.matthewregis.randomquiz.data.local.ILocalRepo;
 import com.matthewregis.randomquiz.data.local.LocalRepo;
 import com.matthewregis.randomquiz.data.models.GameMode;
 import com.matthewregis.randomquiz.data.models.ScoreModel;
-import com.matthewregis.randomquiz.data.remote.OpentdbApi.OpentdbApi;
+import com.matthewregis.randomquiz.data.remote.OpentdbApi;
 
 import org.junit.After;
 import org.junit.Before;

@@ -5,7 +5,7 @@ import android.content.Context;
 
 import com.matthewregis.randomquiz.RandomQuizApplication;
 import com.matthewregis.randomquiz.data.local.LocalRepo;
-import com.matthewregis.randomquiz.data.remote.OpentdbApi.OpentdbApi;
+import com.matthewregis.randomquiz.data.remote.OpentdbApi;
 import com.matthewregis.randomquiz.injection.ApplicationContext;
 import com.matthewregis.randomquiz.injection.module.ApplicationModule;
 

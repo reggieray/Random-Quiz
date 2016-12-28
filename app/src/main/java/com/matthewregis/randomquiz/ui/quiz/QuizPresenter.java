@@ -15,7 +15,7 @@ import com.matthewregis.randomquiz.data.models.GameMode;
 import com.matthewregis.randomquiz.data.models.QuizModel;
 import com.matthewregis.randomquiz.data.models.ResultsBean;
 import com.matthewregis.randomquiz.data.models.ScoreModel;
-import com.matthewregis.randomquiz.data.remote.OpentdbApi.OpentdbApi;
+import com.matthewregis.randomquiz.data.remote.OpentdbApi;
 import com.matthewregis.randomquiz.injection.ApplicationContext;
 import com.matthewregis.randomquiz.injection.ConfigPersistent;
 import com.matthewregis.randomquiz.ui.base.BasePresenter;

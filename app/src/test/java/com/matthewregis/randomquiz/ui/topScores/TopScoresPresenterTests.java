@@ -55,10 +55,20 @@ public class TopScoresPresenterTests {
     }
 
     @Test
-    public void ShouldSetTopScoresOnCreated() throws Exception{
+    public void ShouldSetTopScoresOnCreatedIfListNotEmpty() throws Exception{
+        List<ScoreModel> scoreModels = new ArrayList<>();
+        scoreModels.add(new ScoreModel());
+        when(mLocalRepo.GetTopScores()).thenReturn(scoreModels);
+        topScoresPresenter.onCreated();
+        verify(mTopScoresView, times(1)).ShowListView();
+        verify(mTopScoresView,times(1)).SetTopScoresListView(scoreModels);
+    }
+
+    @Test
+    public void ShouldShowEmptyViewIfTopScoreListIsEmpty() throws Exception{
         List<ScoreModel> scoreModels = new ArrayList<>();
         when(mLocalRepo.GetTopScores()).thenReturn(scoreModels);
         topScoresPresenter.onCreated();
-        verify(mTopScoresView,times(1)).SetTopScoresListView(scoreModels);
+        verify(mTopScoresView, times(1)).ShowEmptyView();
     }
 }

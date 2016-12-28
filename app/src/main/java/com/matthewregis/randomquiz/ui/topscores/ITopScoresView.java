@@ -13,4 +13,7 @@ public interface ITopScoresView extends MvpView{
 
     void SetTopScoresListView(List<ScoreModel> scoreModelList);
 
+    void ShowListView();
+
+    void ShowEmptyView();
 }

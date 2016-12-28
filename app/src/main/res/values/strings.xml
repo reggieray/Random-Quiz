@@ -14,7 +14,7 @@
     <string name="what_was_that">What was that?</string>
     <string name="wrong">Wrong!</string>
     <string name="correct">Correct!</string>
-
+    <string name="sorry_no_scores_yet">Sorry no scores yet</string>
 
 
 </resources>
