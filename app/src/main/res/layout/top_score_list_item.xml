@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/top_score_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/top_score_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/amber"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/top_score_info_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/rolling_dices" />
+
+            <TextView
+                android:id="@+id/top_score_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="Name: Test User\nScore: 33"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

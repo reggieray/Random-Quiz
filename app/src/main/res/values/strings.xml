@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Random Quiz</string>
+
+    <string name="opentdb_base_url">https://opentdb.com</string>
+
+    <string name="opentdb_random_10_path">/api.php?amount=10</string>
+
+    <string name="opentdb_random_path">api.php?amount=</string>
+    <string name="main_btn_random_10">\nRandom 10</string>
+    <string name="main_btn_sudden_death">\nSudden Death</string>
+    <string name="main_btn_top_scores">\nTop Scores</string>
+    <string name="game_mode_sudden_death">SuddenDeath</string>
+    <string name="unable_to_get_questions_message">Unable to get questions. Please check your connection and try again.</string>
+    <string name="what_was_that">What was that?</string>
+    <string name="wrong">Wrong!</string>
+    <string name="correct">Correct!</string>
+
+
+
+</resources>
